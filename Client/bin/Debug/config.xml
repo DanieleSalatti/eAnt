@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<AntKernel version="0.02">
+  <properties>
+    <property key="ICHEnabled" value="True" type="bool" />
+    <property key="RemoteControlEnabled" value="False" type="bool" />
+    <property key="UserHash" value="oGq8TrQOZfgXl4aoLJ5v2A==" type="byte[]" />
+    <property key="MaxServerFails" value="2" type="short" />
+    <property key="TCPPort" value="4662" type="ushort" />
+    <property key="AllowViewShared" value="Nobody" type="enum" />
+    <property key="RemoteControlPort" value="7255" type="int" />
+    <property key="DownloadServerMet" value="True" type="bool" />
+    <property key="OSigEnabled" value="False" type="bool" />
+    <property key="Language" value="it-IT" type="string" />
+    <property key="CompressionMethod" value="Zip" type="enum" />
+    <property key="MaxSourcesPerFile" value="900" type="int" />
+    <property key="UpdateServerListFromServer" value="True" type="bool" />
+    <property key="MaxDownloadRate" value="200" type="float" />
+    <property key="UseEmuleProtocol" value="True" type="bool" />
+    <property key="IPFilterEnabled" value="False" type="bool" />
+    <property key="MaxConnections" value="140" type="int" />
+    <property key="QueueLength" value="200" type="int" />
+    <property key="ServerMetUri" value="http://www.salatti.net/eAnt/server/best/server.met" type="string" />
+    <property key="UDPPort" value="4672" type="ushort" />
+    <property key="TempFolders" type="string[]">
+      <entry>C:\Programmi\Salatti.NET\eAnt\temp</entry>
+    </property>
+    <property key="ID" value="2572662096" type="uint" />
+    <property key="UpdateServerListFromClient" value="False" type="bool" />
+    <property key="MaxUploadRate" value="20" type="float" />
+    <property key="AutoExtendSearch" value="True" type="bool" />
+    <property key="SharedFolders" type="string[]">
+      <entry>C:\Programmi\Salatti.NET\eAnt\incoming</entry>
+    </property>
+    <property key="UserName" value="[eAnt] http://www.salatti.net" type="string" />
+    <property key="StartNextStoppedFile" value="False" type="bool" />
+    <property key="AutoReconnect" value="False" type="bool" />
+  </properties>
+</AntKernel>

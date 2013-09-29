@@ -1,0 +1,591 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{95001C3C-2297-4729-B653-0371D55A9A73}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "Client\eAnt.ico"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "eAntClient"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                PreBuildEvent = 'xcopy "$(ProjectDir)Language" "$(SolutionDir)Client\bin\Debug\Language" /I /Y >result.txt&#xd;&#xa;xcopy "$(ProjectDir)Language" "$(SolutionDir)Client\bin\Release\Language" /I /Y >>result.txt&#xd;&#xa;xcopy "$(ProjectDir)Client\Resources\MsnSkin" "$(SolutionDir)Client\bin\Release\Skins\MsnSkin" /I /Y >>result.txt&#xd;&#xa;xcopy "$(ProjectDir)Client\Resources\MsnSkin" "$(SolutionDir)Client\bin\Debug\Skins\MsnSkin" /I /Y >>result.txt&#xd;&#xa;copy "$(ProjectDir)Client\webSearchs.xml" "$(SolutionDir)Client\bin\Release" /Y >>result.txt&#xd;&#xa;copy "$(ProjectDir)Client\webSearchs.xml" "$(SolutionDir)Client\bin\Debug" /Y >>result.txt&#xd;&#xa;'
+                PostBuildEvent = ""
+                RootNamespace = "eAnt.Client"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = "eAnt.Client.eAntForm"
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE;COMPRESSION"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "..\..\..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\..\..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "..\..\..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "..\..\..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "..\..\..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "System.Runtime.Remoting"
+                    AssemblyName = "System.Runtime.Remoting"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Runtime.Remoting.dll"
+                />
+                <Reference
+                    Name = "System.Design"
+                    AssemblyName = "System.Design"
+                    HintPath = "..\..\..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Design.dll"
+                />
+                <Reference
+                    Name = "MagicLibrary"
+                    AssemblyName = "MagicLibrary"
+                    HintPath = "MagicLibrary.dll"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "ICSharpCode.SharpZipLib"
+                    AssemblyName = "ICSharpCode.SharpZipLib"
+                    HintPath = "..\Kernel\ICSharpCode.SharpZipLib.dll"
+                />
+                <Reference
+                    Name = "eAnt"
+                    Project = "{3DFF64F5-7EE6-4AA9-9D5D-A4CF8F648C37}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "eAntInterface"
+                    Project = "{68817627-41F1-43C9-A912-20906FD7E5CC}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CSkin.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MagicLibrary.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Main.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Utils.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Version.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\eAntForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\eAntForm.resx"
+                    DependentUpon = "eAntForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\FormAbout.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\FormAbout.resx"
+                    DependentUpon = "FormAbout.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\KernelGateway.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\MenuInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\NameCleaner.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\Remoting.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\StartForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\StartForm.resx"
+                    DependentUpon = "StartForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\SystemIconsList.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\webSearchs.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Client\Forms\FormCategory.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\Forms\FormCategory.resx"
+                    DependentUpon = "FormCategory.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Forms\FormConnections.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\Forms\FormConnections.resx"
+                    DependentUpon = "FormConnections.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Forms\FormDownloads.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\Forms\FormDownloads.resx"
+                    DependentUpon = "FormDownloads.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Forms\FormFriends.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\Forms\FormFriends.resx"
+                    DependentUpon = "FormFriends.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Forms\FormOptions.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\Forms\FormOptions.resx"
+                    DependentUpon = "FormOptions.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Forms\FormSearch.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\Forms\FormSearch.resx"
+                    DependentUpon = "FormSearch.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Forms\FormServers.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\Forms\FormServers.resx"
+                    DependentUpon = "FormServers.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Forms\FormUploads.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\Forms\FormUploads.resx"
+                    DependentUpon = "FormUploads.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Forms\WizardForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\Forms\WizardForm.resx"
+                    DependentUpon = "WizardForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Forms\FileDetails\FormAviDetails.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\Forms\FileDetails\FormAviDetails.resx"
+                    DependentUpon = "FormAviDetails.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Lists\commentsListView.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\Lists\commentsListView.resx"
+                    DependentUpon = "commentsListView.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Lists\downloadsListView.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\Lists\downloadsListView.resx"
+                    DependentUpon = "downloadsListView.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Lists\eAntListView.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\Lists\eAntListView.resx"
+                    DependentUpon = "eAntListView.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Lists\fileNamesListView.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\Lists\fileNamesListView.resx"
+                    DependentUpon = "fileNamesListView.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Lists\ListColumn.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\Lists\ListColumnArray.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\Lists\queueListView.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\Lists\queueListView.resx"
+                    DependentUpon = "queueListView.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Lists\searchListView.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\Lists\searchListView.resx"
+                    DependentUpon = "searchListView.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Lists\serversListView.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\Lists\serversListView.resx"
+                    DependentUpon = "serversListView.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Lists\sharedListView.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\Lists\sharedListView.resx"
+                    DependentUpon = "sharedListView.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Lists\sourcesListView.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\Lists\sourcesListView.resx"
+                    DependentUpon = "sourcesListView.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Lists\uploadsListView.cs"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\Lists\uploadsListView.resx"
+                    DependentUpon = "uploadsListView.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\BigGraphic.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\BtnConnect.ico"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\BtnConnectMousePressed.ico"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\BtnConnectMouseUp.ico"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\BtnDisconnect.ico"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\BtnDisconnectMousePressed.ico"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\BtnDisconnectMouseUp.ico"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\BtnDownload.gif"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\BtnFriends.gif"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\BtnOptions.ico"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\BtnOptionsMousePressed.ico"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\BtnOptionsMouseUp.ico"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\BtnSearch.gif"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\BtnSeparatorDown.gif"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\BtnSeparatorDownMousePressed.gif"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\BtnSeparatorDownMouseUp.gif"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\BtnSeparatorUp.gif"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\BtnSeparatorUpMousePressed.gif"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\BtnSeparatorUpMouseUp.gif"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\BtnServers.gif"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\BtnUpload.gif"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\close.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\Friend.ico"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\FriendSlot.ico"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\PopUpSkin.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\preview.JPG"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\skin.xml"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\SmallGraphic.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\StatusBarExtensible.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\StatusBarLeft.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\StatusBarRight.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\ToolBarButtons.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\ToolBarExtensible.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Resources\Classic\ToolBarRight.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Client\Types\Types.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Client\Win32\Win32.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Language\interface_de-DE.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Language\interface_en-US.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Language\interface_fr-FR.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Language\interface_it-IT.xml"
+                    BuildAction = "Content"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<WebSearchs version="0.1">
+  <Searchs>
+	<Search SiteName="Google" URL="http://www.google.com/search?q=[CleanName] [film]" Language="All"/>
+	<Search SiteName="Servers list" URL="http://ed2k.2x4u.de/index.html" Language="All"/>
+	<Search SiteName="Razorback2 File stats" URL="http://stats.razorback2.com/ed2khistory?ed2k=[HashId]" Language="All" />
+	<Search SiteName="-"/>
+	<Search SiteName="FakeCheck" URL="http://donkeyfakes.gambri.net/fakecheck/update/fakecheck.php?hash=[HashId]" Language="All"/>
+	<Search SiteName="ReportFake" URL="http://donkeyfakes.gambri.net/report/index.php?link2=[eD2kLink]" Language="All"/>
+	<Search SiteName="-"/>
+	<Search SiteName="IMDB" URL="http://www.imdb.com/find?tt=on;mx=20;q=[CleanName]" Language="en"/>
+	<Search SiteName="Yahoo movies" URL="http://search.movies.yahoo.com/moviesintgsearch?search=all&amp;p=[CleanName]" Language="en" />
+  </Searchs>
+</WebSearchs> 
